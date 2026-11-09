@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description | escape }}">
+    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23111827'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='sans-serif' font-size='24' fill='white'%3EC%3C/text%3E%3C/svg%3E">
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="wrapper">
+        <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+      </div>
+    </header>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">{{ content }}</div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrapper"><p>{{ site.description | escape }}</p></div>
+    </footer>
+  </body>
+</html>
